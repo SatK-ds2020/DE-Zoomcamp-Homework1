@@ -165,10 +165,10 @@ Result:
 dropoff_zone	   max_tip   \
 JFK Airport	     87.3    \
 
-### Question 7. Terraform Workflow
+### Question 7. Terraform Workflow 
 Which of the following sequences, respectively, describes the workflow for:
 Answer: terraform init, terraform apply -auto-approve, terraform destroy
-
+Reference: **terraform-gcp Folder**
 Explaination: 
 - terraform init: Initializes the Terraform working directory and sets up the necessary plugins and configurations.
 - terraform apply -auto-approve: Provisions the infrastructure as defined in the configuration files without requiring manual approval.
