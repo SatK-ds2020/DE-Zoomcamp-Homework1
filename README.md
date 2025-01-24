@@ -167,7 +167,9 @@ JFK Airport	     87.3    \
 
 ### Question 7. Terraform Workflow 
 Which of the following sequences, respectively, describes the workflow for:
+
 Answer: terraform init, terraform apply -auto-approve, terraform destroy
+
 Execution: created GCP project and service account with appropraite permissions.
 Credential Access keys downloaded in Json format and saved locally.
 
