@@ -1,4 +1,4 @@
-# # Module 1 Homework: Docker & SQL
+#  Module 1 Homework: Docker & SQL
 In this homework I have prepare the environment to practice Docker and SQL
 
 ## Question 1: 
@@ -57,7 +57,7 @@ CONTAINER ID   IMAGE                   COMMAND                  CREATED         
 (base)
 ```
 ##  Prepare Postgres
-To load data into postgres, we preapred greendata_upload.ipynb 
+To load data into postgres, we preapred **greendata_upload.ipynb** 
 
 We'll use the green taxi trips from October 2019 as mentioned in the homework and it can be downloded as either parquet or in csv:
 ```
