@@ -96,8 +96,8 @@ FROM green_taxi_data
 WHERE lpep_pickup_datetime >= '2019-10-01' AND lpep_pickup_datetime < '2019-11-01';
 ```
 *Result:
-Up to 1 mile	: 104830 \
-Between 1 and 3 miles: 198995 \	
+Up to 1 mile	: 104830  \
+Between 1 and 3 miles: 198995  \	
 Between 3 and 7 miles: 109642	\
 Between 7 and 10 miles: 27686	\
 Over 10 miles: 35201
@@ -114,8 +114,8 @@ ORDER BY max_distance DESC
 LIMIT 1;
 ```
 Result
-pickup_day	max_distance
-10/31/2019	515.89
+pickup_day	max_distance  \
+10/31/2019	515.89  \
 ### Question 5. Three biggest pickup zones
 Which were the top pickup locations with over 13,000 in total_amount (across all trips) for 2019-10-18? Consider only lpep_pickup_datetime when filtering by date.
 First the table columns are renamed 
@@ -140,10 +140,11 @@ HAVING SUM(g.total_amount)>13000
 ORDER BY total_amount DESC;
 ```
 Result:
-borough	      zone	          total_amount
-Manhattan	 East Harlem North	  18686.68
-Manhattan	 East Harlem South	  16797.26
+borough	             zone	         total_amount   \
+Manhattan	 East Harlem North	  18686.68     \
+Manhattan	 East Harlem South	  16797.26     \
 Manhattan  Morningside Heights	13029.79
+
 ### Question 6. Largest tip
 For the passengers picked up in October 2019 in the zone named "East Harlem North" which was the drop off zone that had the largest tip?
 ```{sql}
@@ -161,8 +162,8 @@ ORDER BY max_tip DESC
 LIMIT 1;
 ```
 Result:
-dropoff_zone	max_tip
-JFK Airport	     87.3
+dropoff_zone	   max_tip   \
+JFK Airport	     87.3    \
 
 ### Question 7. Terraform Workflow
 Which of the following sequences, respectively, describes the workflow for:
@@ -174,8 +175,8 @@ Explaination:
 - terraform destroy: Destroys all the resources managed by Terraform, cleaning up the infrastructure.
 
 ## Learning public links
-- 1. https://developer.hashicorp.com/terraform
-- 2. https://developer.hashicorp.com/terraform/tutorials/gcp-get-started
-- 3. https://docs.docker.com/manuals/
-- 4. https://www.youtube.com/watch?v=18jIzE41fJ4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=3
-- 5. https://www.freecodecamp.org/news/postgresql-in-python/
+- 1.https://developer.hashicorp.com/terraform
+- 2.https://developer.hashicorp.com/terraform/tutorials/gcp-get-started
+- 3.https://docs.docker.com/manuals/
+- 4.https://www.youtube.com/watch?v=18jIzE41fJ4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=3
+- 5.https://www.freecodecamp.org/news/postgresql-in-python/
