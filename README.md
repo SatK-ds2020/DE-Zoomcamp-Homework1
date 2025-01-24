@@ -168,6 +168,30 @@ JFK Airport	     87.3    \
 ### Question 7. Terraform Workflow 
 Which of the following sequences, respectively, describes the workflow for:
 Answer: terraform init, terraform apply -auto-approve, terraform destroy
+Execution: created GCP project and service account with appropraite permissions.
+Credential Access keys downloaded in Json format and saved locally.
+
+# Refresh service-account's auth-token for this session
+```
+export GOOGLE_APPLICATION_CREDENTIALS="D:\DEZommcamp2025\gcp-serviceaccount\gcp_credentials.json"
+gcloud auth application-default login
+```
+# Initialize state file (.tfstate)
+```
+terraform init
+```
+# Check changes to new infra plan
+```
+terraform plan -var="project=<your-gcp-project-id>"
+```
+# Create new infra
+```
+terraform apply -var="project=<your-gcp-project-id>"
+```
+# Delete infra after your work, to avoid costs on any running services
+```
+terraform destroy
+```
 Reference: **terraform-gcp Folder**
 Explaination: 
 - terraform init: Initializes the Terraform working directory and sets up the necessary plugins and configurations.
