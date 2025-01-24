@@ -96,10 +96,10 @@ FROM green_taxi_data
 WHERE lpep_pickup_datetime >= '2019-10-01' AND lpep_pickup_datetime < '2019-11-01';
 ```
 *Result:
-Up to 1 mile	: 104830
-Between 1 and 3 miles: 198995	
-Between 3 and 7 miles: 109642	
-Between 7 and 10 miles: 27686	
+Up to 1 mile	: 104830 \
+Between 1 and 3 miles: 198995 \	
+Between 3 and 7 miles: 109642	\
+Between 7 and 10 miles: 27686	\
 Over 10 miles: 35201
 
 ### Question 4. Longest trip for each day
